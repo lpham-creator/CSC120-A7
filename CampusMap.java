@@ -19,6 +19,18 @@ public class CampusMap {
         System.out.println("-->Successfully added " + b.getName() + " to the map.");
     }
 
+    public void addBuilding(Library lib) {
+        System.out.println("Adding library...");
+        buildings.add(lib);
+        System.out.println("-->Successfully added " + lib.getName() + " to the map.");
+    }
+    
+    public void addBuilding(Cafe cafe) {
+        System.out.println("Adding cafe...");
+        buildings.add(cafe);
+        System.out.println("-->Successfully added " + cafe.getName() + " to the map.");
+    }
+
     /**
      * Removes a Building from the map
      * @param b the Building to remove
@@ -44,6 +56,14 @@ public class CampusMap {
         CampusMap myMap = new CampusMap();
         myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4));
         myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4));
+        myMap.addBuilding(new Library("Neilson Library", "7 Neilson Drive Northampton, MA 01063", 4, true));
+        myMap.addBuilding(new Library("Hillyer Art Library", "20 Elm Street Northampton, MA 01063", 4, true));
+        myMap.addBuilding(new Building("Ainsworth Gym", "102 Lower College Ln Northampton, MA 01063", 3));
+        myMap.addBuilding(new House("Jordan House", "1 Paradise Road Northampton, MA 01063", 4, false, false));
+        myMap.addBuilding(new House("Cutter-Ziskind House", "1 Henshaw Ave Northampton, MA 01063", 4, true, true));
+        myMap.addBuilding(new House("Northrop House", "49 Elm Street Northampton, MA 01063", 4, true, true));
+        myMap.addBuilding(new Cafe("Compass Cafe", "7 Neilson Drive Northampton, MA 01063", 1));
+        myMap.addBuilding(new Cafe("Campus Cafe", "Smith College Campus Center, 100 Elm St Northampton, MA 01063", 1));
         System.out.println(myMap);
     }
     
