@@ -211,7 +211,7 @@ public class Library extends Building {
     try {
       Neilson.checkOut("Dracula");
     } catch (Exception e) {
-      System.out.println(e); // Out of fuel
+      System.out.println(e); 
     }
     Neilson.checkOut("The Da Vinci Code");
     Neilson.printCollection();
